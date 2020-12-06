@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image viewer</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    img {
+      height: calc(100vh - 80px);
+      width: 100vw;
+      object-fit: contain;
+      display: block;
+    }
+
+    input {
+      height: 40px;
+      width: 100%;
+      padding: 10px;
+    }
+
+    button {
+      height: 40px;
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: rebeccapurple;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <input placeholder="url" type="text">
+  <button>GET IMAGE</button>
+  <img id="img" src="">
+  <script src="script.js"></script>
+</body>
+
+</html>
